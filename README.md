@@ -9,11 +9,6 @@ minikube addons enable metrics-server
 ```
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/roelal/minikube/5093d8b21c0931a6c63fa448538761b4bf100ee0/deploy/addons/ingress/ingress-rc.yaml
-kubectl apply -f https://raw.githubusercontent.com/roelal/minikube/5093d8b21c0931a6c63fa448538761b4bf100ee0/deploy/addons/ingress/ingress-svc.yaml
-```
-
-```bash
 minikube addons enable metallb
 ```
 
