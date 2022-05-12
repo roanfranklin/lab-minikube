@@ -1,4 +1,4 @@
-
+## Minikube + HELM
 
 ### Pré-requesitos
 
@@ -9,6 +9,7 @@
 - sudo
 - minikube
 - kubectl
+- helm
 
 2º Configuração
 
@@ -51,9 +52,15 @@ minikube addons configure metallb
 - *Enter Load Balancer Start IP: 192.168.15.3*
 - *Enter Load Balancer End IP: 192.168.15.3*
 
+### Instalar HELM
 
+```bash
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+```
 
-## Caso preicise limpar o Minikube e iniciar do zero, executar o stop e o delete!
+### Caso preicise limpar o Minikube e iniciar do zero, executar o stop e o delete!
 
 ```bash
 minikube stop
