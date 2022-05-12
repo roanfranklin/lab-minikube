@@ -1,4 +1,21 @@
-## Download e Install minikube:
+
+
+### Pré-requesitos
+
+1º Aplicação:
+
+- docker
+- conntrack
+- sudo
+- minikube
+- kubectl
+
+2º Configuração
+
+- 4 GB de Memória RAM;
+- 2 Nucleos (Processador).
+
+### Download e Install minikube:
 
 ```bash
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
@@ -7,8 +24,7 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 [URL-Minikube](https://minikube.sigs.k8s.io/docs/start/)
 
 
-
-## Iniciar os teste com o Minikube.
+### Iniciar os teste com o Minikube.
 
 ```bash
 minikube start --driver=none
