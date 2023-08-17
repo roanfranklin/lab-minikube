@@ -62,6 +62,17 @@ minikube addons configure metallb
 kubectl edit service/ingress-nginx-controller -n ingress-nginx
 ```
 
+### Image Registry Copy
+
+Comandos para listar, adicionar, recarregar e deletar uma imagem do seu docker no kubernetes (minikube).
+
+```bash
+minikube cache add alpine:latest
+minikube cache reload
+minikube cache list
+minikube cache delete <image name>
+```
+
 ### Instalar HELM
 
 ```bash
