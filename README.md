@@ -40,6 +40,10 @@ minikube addons enable metallb
 ```
 
 ```bash
+minikube addons enable ingress
+```
+
+```bash
 minikube ip
 ```
 
@@ -51,6 +55,12 @@ minikube addons configure metallb
 
 - *Enter Load Balancer Start IP: 192.168.15.3*
 - *Enter Load Balancer End IP: 192.168.15.3*
+
+*OBS.: Editar o type: NodePort para LoadBalancer com o comando abaixo.*
+
+```bash
+kubectl edit service/ingress-nginx-controller -n ingress-nginx
+```
 
 ### Instalar HELM
 
